@@ -2,7 +2,6 @@ package camp.androidboot.tipcalculator;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -87,11 +86,10 @@ public class TipCalculatorActivity extends Activity {
    * @return
    */
   private double getBillAmountFromField() {
-    String billAmountText = billAmountField.getText().toString();
-    if (!TextUtils.isEmpty(billAmountText)) {
-      return Double.parseDouble(billAmountText);
-    } else {
-      return 0.0;
+    try {
+      return Double.parseDouble(billAmountField.getText().toString());
+    } catch (NumberFormatException e) {
+      return 0;
     }
   }
 

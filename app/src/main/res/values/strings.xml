@@ -7,7 +7,7 @@
   <string name="tip_label">Tip</string>
   <string name="total_label">Total</string>
   <string name="amount_format">$%.2f</string>
-  <string name="amount_default">$__.__</string>
+  <string name="amount_default">$0.00</string>
 
   <string name="tip1_amount">15%</string>
   <string name="tip2_amount">20%</string>
