@@ -13,4 +13,6 @@
   <string name="tip2_amount">20%</string>
   <string name="tip3_amount">25%</string>
 
+  <string name="error_invalid_number_format">Please enter a valid number.</string>
+
 </resources>

@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  *
@@ -89,6 +90,7 @@ public class TipCalculatorActivity extends Activity {
     try {
       return Double.parseDouble(billAmountField.getText().toString());
     } catch (NumberFormatException e) {
+      Toast.makeText(this, R.string.error_invalid_number_format, Toast.LENGTH_SHORT).show();
       return 0;
     }
   }
